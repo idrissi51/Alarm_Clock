@@ -3,7 +3,6 @@ from tkinter import *
 import time
 import datetime
 import winsound
-noow = datetime.datetime.now().strftime("%H:%M:%S")
 
 
 def alarm(set_alarm_timer):
@@ -34,6 +33,7 @@ addTime = Label(root, text="  Hour         Min         Sec",
                 font=60).place(x=110)
 setYourAlarm = Label(root, text="When to wake you up", bg="orange", fg="blue", font=(
     "Helevetica", 7, "bold")).place(x=0, y=29)
+noow = datetime.datetime.now().strftime("%H:%M:%S")
 Timenew = Label(root, text=f"Time now: {noow}", fg="black",
                 font="arial 10 ").place(x=140, y=170)
 hour = StringVar()
